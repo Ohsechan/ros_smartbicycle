@@ -27,3 +27,20 @@
 <pre><code>rosrun app_communicate gps</code></pre>
 ### 3-5. 속도 계산 노드 실행 (optional)
 <pre><code>rosrun app_communicate reed_switch</code></pre>
+
+## 4. 시스템 상세
+### 4-1. 아두이노 시스템 구성도
+![Arduino](https://github.com/Ohsechan/ros_smartbicycle/assets/77317210/8575d6a7-9f35-4248-87aa-5c9e03d29528)
+### 4-2. 라즈베리파이 시스템 구성도
+![Raspberry_pi](https://github.com/Ohsechan/ros_smartbicycle/assets/77317210/c4636688-99b3-447b-9293-063817f62e5d)
+### 4-3. YDLIDAR X4
+![lidar](https://github.com/Ohsechan/ros_smartbicycle/assets/77317210/f0da4048-7175-44e3-ba58-9c9a41345cd2)
+### 4-4. MPU6050 가속도 센서
+![가속도센서](https://github.com/Ohsechan/ros_smartbicycle/assets/77317210/e689c697-ed33-4a5c-8b59-43fb0fb7e811)
+### 4-5. Dot Matrix 32x8 : 방향지시등(좌, 우) 및 수신호(앞질러 가시오, 장애물 조심)
+![방향지시등](https://github.com/Ohsechan/ros_smartbicycle/assets/77317210/f4efcbd2-390e-4f87-beda-d6afe723f84e)
+### 4-6. GPS 수신기(L80-39)
+![gps](https://github.com/Ohsechan/ros_smartbicycle/assets/77317210/126cf710-ad5b-404c-a671-347686653643)
+### 4-7. Reed Switch
+![reed](https://github.com/Ohsechan/ros_smartbicycle/assets/77317210/42d8255b-a4bc-45a0-b860-da42cfc9bd6f)
+
