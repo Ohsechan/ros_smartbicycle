@@ -1,5 +1,5 @@
 # Smart Bicycle
-## 프로젝트 소개
+## 1. 프로젝트 소개
 - 수상 경력
   - 2021 한이음 공모전 입선
 - 설명
@@ -8,16 +8,22 @@
 - 사진
 ![bicycle](https://github.com/Ohsechan/ros_smartbicycle/assets/77317210/e127291b-3a29-4168-9583-b525922cdce4)
 
-## 개발환경
+## 2. 개발환경
 - 개발보드 : Raspberry pi 3B+
 - 운영체제 : Ubuntu Server 20.04 LTS
 - 로봇 소프트웨어 플랫폼 : ROS Noetic
 
-## 사용방법
-- 라이다와 rviz 동시 실행
+## 3. 사용방법
+### 3-1. 라이다 실행
+- option 1 : 라이다와 rviz 동시 실행
 <pre><code>roslaunch ydlidar lidar_view.launch</code></pre>
-- 라이다 실행
+- option 2 : 라이다만 실행
 <pre><code>roslaunch ydlidar lidar.launch</code></pre>
-- 라이다 값 받아보기
+### 3-2. 위험 감지 노드 실행
 <pre><code>rosrun ydlidar ydlidar_client</code></pre>
-
+### 3-3. 스피커 노드 실행
+<pre><code>rosrun mysound mysoundplay</code></pre>
+### 3-4. GPS 노드 실행 (optional)
+<pre><code>rosrun app_communicate gps</code></pre>
+### 3-5. 속도 계산 노드 실행 (optional)
+<pre><code>rosrun app_communicate reed_switch</code></pre>
