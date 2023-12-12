@@ -11,7 +11,7 @@
 ![bicycle](https://github.com/Ohsechan/ros_smartbicycle/assets/77317210/e127291b-3a29-4168-9583-b525922cdce4)
 
 ## 2. 개발환경
-- 개발보드 : Raspberry pi 3B+, Arduino nano
+- 개발보드 : Raspberry pi 3B+, Arduino Nano
 - 운영체제 : Ubuntu Server 20.04 LTS
 - 로봇 소프트웨어 플랫폼 : ROS Noetic
 
