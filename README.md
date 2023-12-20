@@ -25,32 +25,30 @@
 ## 2. 프로젝트 구현
 ### 2-1. 데모 영상
 [![youtube playlist](http://img.youtube.com/vi/WzGiYVAovKw/0.jpg)](https://www.youtube.com/playlist?list=PLx5EbqT-6Y0-vhDGhUZjxdHfV_A648O1l)
-### 3-1. 아두이노 시스템 구성도
-![Arduino](https://github.com/Ohsechan/ros_smartbicycle/assets/77317210/8575d6a7-9f35-4248-87aa-5c9e03d29528)
-### 3-2. 라즈베리파이 시스템 구성도
-![Raspberry_pi](https://github.com/Ohsechan/ros_smartbicycle/assets/77317210/c4636688-99b3-447b-9293-063817f62e5d)
-### 3-3. 주변 환경 감지를 위한 YDLIDAR X4
+### 2-2. 전체 시스템 구성도
+![전체 시스템 구성도](https://github.com/Ohsechan/ros_smartbicycle/assets/77317210/c3787696-4901-4e54-bc3e-11c72275e29e)
+### 2-3. 주변 환경 감지를 위한 YDLIDAR X4
 ![lidar](https://github.com/Ohsechan/ros_smartbicycle/assets/77317210/f0da4048-7175-44e3-ba58-9c9a41345cd2)
-### 3-4. 핸들 방향 감지를 위한 MPU6050 가속도 센서
+### 2-4. 핸들 방향 감지를 위한 MPU6050 가속도 센서
 ![가속도센서](https://github.com/Ohsechan/ros_smartbicycle/assets/77317210/e689c697-ed33-4a5c-8b59-43fb0fb7e811)
-### 3-5. 후방 지시등을 위한 Dot Matrix 32x8 : 방향지시등(좌, 우) 및 수신호(앞질러 가시오, 장애물 조심)
+### 2-5. 후방 지시등을 위한 Dot Matrix 32x8 : 방향지시등(좌, 우) 및 수신호(앞질러 가시오, 장애물 조심)
 ![방향지시등](https://github.com/Ohsechan/ros_smartbicycle/assets/77317210/f4efcbd2-390e-4f87-beda-d6afe723f84e)
-### 3-6. 현재 위치 표시를 위한 GPS 수신기(L80-39)
+### 2-6. 현재 위치 표시를 위한 GPS 수신기(L80-39)
 ![gps](https://github.com/Ohsechan/ros_smartbicycle/assets/77317210/126cf710-ad5b-404c-a671-347686653643)
-### 3-7. 현재 속도 표시를 위한 Reed Switch
+### 2-7. 현재 속도 표시를 위한 Reed Switch
 ![reed](https://github.com/Ohsechan/ros_smartbicycle/assets/77317210/42d8255b-a4bc-45a0-b860-da42cfc9bd6f)
 
-## 4. 실행 방법
-### 4-1. 라이다 실행
+## 3. 실행 방법
+### 3-1. 라이다 실행
 - option 1 : 라이다와 rviz 동시 실행
 <pre><code>roslaunch ydlidar lidar_view.launch</code></pre>
 - option 2 : 라이다만 실행
 <pre><code>roslaunch ydlidar lidar.launch</code></pre>
-### 4-2. 위험 감지 노드 실행
+### 3-2. 위험 감지 노드 실행
 <pre><code>rosrun ydlidar ydlidar_client</code></pre>
-### 4-3. 스피커 노드 실행
+### 3-3. 스피커 노드 실행
 <pre><code>rosrun mysound mysoundplay</code></pre>
-### 4-4. GPS 노드 실행 (optional)
+### 3-4. GPS 노드 실행 (optional)
 <pre><code>rosrun app_communicate gps</code></pre>
-### 4-5. 속도 계산 노드 실행 (optional)
+### 3-5. 속도 계산 노드 실행 (optional)
 <pre><code>rosrun app_communicate reed_switch</code></pre>
