@@ -1,21 +1,30 @@
 # Smart Bicycle
-## 1. 프로젝트 소개
-- 수상 이력
-  - 2021 한이음 공모전 입선
-- 설명
-  - 자전거 운전자는 전방을 주시해야 하기 때문에, 측방 또는 후방에서 빠르게 다가오는 물체를 인지하는 것에 어려움이 있습니다.
-  - 이 프로젝트에서는 운전자가 안전하게 운전할 수 있는 “스마트자전거”를 제작하였습니다.
-  - 2D LiDAR를 이용하여 빠르게 다가오는 물체에 대한 위험을 운전자에게 알립니다.
-  - 이외에도 속도 계산, 위치 정보 표시, 수신호를 표현하는 후방 지시등 시스템으로 운전자의 안전과 편의를 위한 기능들을 구현하였습니다.
-- 사진
-![bicycle](https://github.com/Ohsechan/ros_smartbicycle/assets/77317210/e127291b-3a29-4168-9583-b525922cdce4)
+## 1. 프로젝트 요약
+### 1-1. 설명
+자전거 운전자는 항상 전방을 주시하기 때문에 측방과 후방에서 다가오는 물체를 인식하지 못한다. 빠르게 다가오는 물체에 대한 충돌 위험을 미리 알릴 수 있다면 운전자는 충돌 사고에 미리 대비할 수 있을 것이다.
+본 프로젝트에서는 자전거에 LiDAR 센서를 부착하여 빠르게 다가오는 물체의 방향과 거리를 운전자에게 음성으로 안내하는 기능을 구현하였다. 또한 방향지시등 기능, 현재 위치 정보, 현재 속도 정보 등의 운전자의 편의를 위한 기능도 구현하였다.
+### 1-2. 수상이력
+- 2021 한이음 공모전 입선
+### 1-3. 개발 규모
+- 인원 : 3명
+- 일시 : 2021.04 ~ 2021.11
+### 1-4. 개발환경
+- Ubuntu 20.04 Server
+- ROS Noetic
+- C++ : YDLIDAR SDK
+- Python
+### 1-5. 하드웨어
+- Raspberry pi 3B+
+- Arduino nano
+- YDLIDAR X4
+- MPU6050
+- Dot Matrix 32x8
+- L80-39 GPS 모듈
+- 리드스위치
 
-## 2. 개발환경
-- 개발보드 : Raspberry pi 3B+, Arduino Nano
-- 운영체제 : Ubuntu Server 20.04 LTS
-- 로봇 소프트웨어 플랫폼 : ROS Noetic
-
-## 3. 시스템 상세
+## 2. 프로젝트 구현
+### 2-1. 데모 영상
+[![youtube playlist](http://img.youtube.com/vi/WzGiYVAovKw/0.jpg)](https://www.youtube.com/playlist?list=PLx5EbqT-6Y0-vhDGhUZjxdHfV_A648O1l)
 ### 3-1. 아두이노 시스템 구성도
 ![Arduino](https://github.com/Ohsechan/ros_smartbicycle/assets/77317210/8575d6a7-9f35-4248-87aa-5c9e03d29528)
 ### 3-2. 라즈베리파이 시스템 구성도
@@ -31,7 +40,7 @@
 ### 3-7. 현재 속도 표시를 위한 Reed Switch
 ![reed](https://github.com/Ohsechan/ros_smartbicycle/assets/77317210/42d8255b-a4bc-45a0-b860-da42cfc9bd6f)
 
-## 4. 사용방법
+## 4. 실행 방법
 ### 4-1. 라이다 실행
 - option 1 : 라이다와 rviz 동시 실행
 <pre><code>roslaunch ydlidar lidar_view.launch</code></pre>
